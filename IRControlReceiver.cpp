@@ -69,8 +69,8 @@ int IRControlReceiver::receive(unsigned char *ir_data)
 
   i = 0 ;
   // リーダ部有り(3300μsより大きい時間にて判断する)
-  // 最近のPanasonicが3400μs　古いPanasonicだと9000μs
-  // Tosibaだと9000μs
+  // Panasonic(DIGA)が3400μs　古いPanasonic(不明)だと9000μs
+  // 東芝(REGZA)だと9000μs
   if (t > 3300) {
     while (digitalRead(_PinNo) == HIGH) ; // リーダ部のHIGH(ON)時間が終わるまで待つ
 
