@@ -1,0 +1,4 @@
+IRControlReceiver	KEYWORD1
+
+IR_DATA_MAX_BYTE	KEYWORD2
+receive	KEYWORD2
