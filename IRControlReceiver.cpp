@@ -75,7 +75,7 @@ int IRControlReceiver::receive(unsigned char *ir_data)
     while (digitalRead(_PinNo) == HIGH) ; // リーダ部のHIGH(ON)時間が終わるまで待つ
 
     // データ部読込
-    // NEC（家電製品協会）
+    // NEC or 家電製品協会
     while (1) {
       while (digitalRead(_PinNo) == LOW) ; // LOW(OFF)の部分は無視
       t = micros() ;
@@ -100,7 +100,7 @@ int IRControlReceiver::receive(unsigned char *ir_data)
     }
   } else if (t > 50) {
     // リーダ部のHIGH(ON)までの時間が1000μs以下だとSONY製
-    // ただし50μs以下以下はノイズの可能性あり
+    // ただし50μs以下はノイズの可能性あり
     while (digitalRead(_PinNo) == HIGH) ; // リーダ部のHIGH(ON)時間が終わるまで待つ
     // データ部読込
     // SONY
