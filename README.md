@@ -1,7 +1,7 @@
 # IRControlReceiver Library for Arduino
 
 This library gets the received data of infrared remote control in Arduino.  
-I have tested in Japan of infrared remote control .
+I was confirmed by Japanese made TV remote control.  
 
 ##Version 0.1
 
