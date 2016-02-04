@@ -15,12 +15,16 @@
 #ifndef __IR_Control_Receiver_INCLUDE__
 #define __IR_Control_Receiver_INCLUDE__
 
+#define IR_DATA_MAX_BYTE_SIZE 8
+
 class IRControlReceiver
 {
-  public:
-    //! LEDの接続されているピン番号を保存する変数
+public:
+
+	//! LEDの接続されているピン番号を保存する変数
     static int _PinNo;
-    //! 赤外線リモコン受信データの最大バイト
+
+	//! 赤外線リモコン受信データの最大バイト
     static int IR_DATA_MAX_BYTE;
 
     /**

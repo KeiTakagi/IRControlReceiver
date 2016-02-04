@@ -16,7 +16,7 @@
 #include "IRControlReceiver.h"
 
 //! 赤外線リモコン受信データの最大バイト
-int IRControlReceiver::IR_DATA_MAX_BYTE = 8;
+int IRControlReceiver::IR_DATA_MAX_BYTE = IR_DATA_MAX_BYTE_SIZE;
 
 //! デフォルトの赤外線リモコン受信モジュール(Vout)に接続するArduino側のピン番号
 int IRControlReceiver::_PinNo = 2;
